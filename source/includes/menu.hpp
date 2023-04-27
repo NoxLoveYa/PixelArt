@@ -17,6 +17,8 @@ class Button {
         //Constructors n Destructors
         Button();
         Button(const char *id);
+        Button(const char *id, sf::Vector2f pos, sf::Vector2f size);
+        Button(const char *id, sf::Vector2f pos, sf::Vector2f size, sf::Color color);
 
         ~Button();
 
