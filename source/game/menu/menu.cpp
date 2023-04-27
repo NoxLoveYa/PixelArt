@@ -16,9 +16,10 @@ Menu::Menu(const char *id)
 
 Menu::~Menu() {}
 
-void Menu::Update()
+void Menu::Update(Game *game)
 {
-
+    for (auto &button : this->button_list)
+        button.Update(game);
 }
 
 void Menu::Draw(sf::RenderTarget &target)

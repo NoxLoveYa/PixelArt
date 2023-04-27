@@ -10,6 +10,7 @@
 
 void Game::Update()
 {
+    this->mouse_pos = sf::Vector2f(sf::Mouse::getPosition(*this->window));
     for (auto &menu : this->menu_list)
-        menu.Update();
+        menu.Update(this);
 }

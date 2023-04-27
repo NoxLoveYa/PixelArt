@@ -31,4 +31,5 @@ class Game {
         //Attributes
         sf::RenderWindow *window;
         std::vector<Menu> menu_list;
+        sf::Vector2f mouse_pos;
 };
