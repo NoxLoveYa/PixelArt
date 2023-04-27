@@ -11,6 +11,8 @@
 #include "SFML/Window.hpp"
 #include "SFML/System.hpp"
 
+#include "menu.hpp"
+
 class Game {
     public:
         //Constructors n Destructors
@@ -23,8 +25,10 @@ class Game {
         //Methods
         void Run();
         void HandleEvents();
+        void Update();
         void Draw();
 
         //Attributes
         sf::RenderWindow *window;
+        std::vector<Menu> menu_list;
 };

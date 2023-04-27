@@ -5,7 +5,7 @@
 ** button
 */
 
-#include "../../includes/menu.hpp"
+#include "../../../include/menu.hpp"
 
 Button::Button()
 {
@@ -41,6 +41,7 @@ void Button::Update()
 {
 }
 
-void Button::Draw()
+void Button::Draw(sf::RenderTarget &target)
 {
+    target.draw(this->rect);
 }

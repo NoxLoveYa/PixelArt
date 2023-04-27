@@ -5,7 +5,7 @@
 ** game
 */
 
-#include "../includes/game.hpp"
+#include "../include/game.hpp"
 
 Game::Game()
 {
@@ -32,6 +32,7 @@ void Game::Run()
     {
         this->window->clear(sf::Color::Black);
         this->HandleEvents();
+        this->Update();
         this->Draw();
         this->window->display();
     }

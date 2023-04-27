@@ -1,14 +1,15 @@
 /*
 ** EPITECH PROJECT, 2023
-** pixelArt
+** PixelArt
 ** File description:
-** game_draw
+** game_update
 */
 
 #include "../include/game.hpp"
+#include "../include/menu.hpp"
 
-void Game::Draw()
+void Game::Update()
 {
     for (auto &menu : this->menu_list)
-        menu.Draw(*this->window);
+        menu.Update();
 }

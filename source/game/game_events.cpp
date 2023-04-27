@@ -5,7 +5,7 @@
 ** game_events
 */
 
-#include "../includes/game.hpp"
+#include "../include/game.hpp"
 
 void Game::HandleEvents()
 {

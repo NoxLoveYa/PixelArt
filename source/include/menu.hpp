@@ -24,7 +24,7 @@ class Button {
 
         //Methods
         void Update();
-        void Draw();
+        void Draw(sf::RenderTarget &target);
 
         //Attributes
         const char *id;
@@ -42,9 +42,10 @@ class Menu {
 
         //Methods
         void Update();
-        void Draw();
+        void Draw(sf::RenderTarget &target);
 
         //Attributes
         const char *id;
         std::vector<sf::Text> texts;
+        std::vector<Button> button_list;
 };
